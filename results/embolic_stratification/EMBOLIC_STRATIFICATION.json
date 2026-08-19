@@ -1,0 +1,107 @@
+{
+  "n_complete_readings": 93,
+  "strata_sizes": {
+    "cTACE": 49,
+    "DEB-TACE": 28,
+    "unrecorded": 16
+  },
+  "cTACE_minus_DEB": {
+    "difference_points": -8.333333333333336,
+    "ci95": [
+      -28.741496598639458,
+      10.884353741496597
+    ],
+    "excludes_zero": false
+  },
+  "baseline_diameter_mm_by_arm": {
+    "cTACE": {
+      "mean": 74.51360544217687,
+      "median": 64.06666666666666,
+      "n": 49
+    },
+    "DEB-TACE": {
+      "mean": 56.67380952380953,
+      "median": 45.83333333333333,
+      "n": 28
+    },
+    "unrecorded": {
+      "mean": 81.80208333333333,
+      "median": 76.13333333333334,
+      "n": 16
+    }
+  },
+  "followup_diameter_mm_by_arm": {
+    "cTACE": {
+      "mean": 41.00136054421768,
+      "median": 30.7
+    },
+    "DEB-TACE": {
+      "mean": 38.135714285714286,
+      "median": 29.366666666666667
+    },
+    "unrecorded": {
+      "mean": 57.73958333333333,
+      "median": 45.56666666666667
+    }
+  },
+  "complete_response_frac_by_arm": {
+    "cTACE": 0.20408163265306123,
+    "DEB-TACE": 0.10714285714285714,
+    "unrecorded": 0.0
+  },
+  "arms": {
+    "cTACE": {
+      "n": 49,
+      "vary_followup_orr": 0.3945578231292517,
+      "vary_baseline_orr": 0.20408163265306123,
+      "delta_orr_points": 19.047619047619047,
+      "delta_orr_ci95": [
+        6.122448979591841,
+        32.65306122448979
+      ],
+      "excludes_zero": true
+    },
+    "DEB-TACE": {
+      "n": 28,
+      "vary_followup_orr": 0.39285714285714285,
+      "vary_baseline_orr": 0.11904761904761903,
+      "delta_orr_points": 27.380952380952383,
+      "delta_orr_ci95": [
+        13.095238095238093,
+        42.85714285714286
+      ],
+      "excludes_zero": true
+    },
+    "unrecorded": {
+      "n": 16,
+      "vary_followup_orr": 0.25,
+      "vary_baseline_orr": 0.14583333333333334,
+      "delta_orr_points": 10.416666666666666,
+      "delta_orr_ci95": [
+        -4.166666666666667,
+        31.25
+      ],
+      "excludes_zero": false
+    }
+  },
+  "generated_utc": "2026-08-18T18:59:34Z",
+  "seed": 20260803,
+  "n_boot": 5000,
+  "provenance": {
+    "HCC-TACE-Seg_clinical_data-V2.xlsx": {
+      "md5": "63af6363b9d0fe453c48e75402e9082c",
+      "expected": "63af6363b9d0fe453c48e75402e9082c",
+      "match": true
+    },
+    "clinical_data_wawtace_v2_15_07_2024.xlsx": {
+      "md5": "fb7aa2803eae6d75745203602b6d385a",
+      "expected": "fb7aa2803eae6d75745203602b6d385a",
+      "match": true
+    },
+    "supplementary_table_s1_definitions_v2.xlsx": {
+      "md5": "fd9fb1cd1c7279882ad7edf6563b1a8d",
+      "expected": "fd9fb1cd1c7279882ad7edf6563b1a8d",
+      "match": true
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "patient": "HCC_034",
+  "collection": "HCC-TACE-Seg",
+  "baseline": {
+    "series": "Recon 3: LIVER 3 PHASE (AP), arterial phase",
+    "z_mm": -122.5,
+    "study_date": "2000-02-14",
+    "offset_days_from_diagnosis": 1
+  },
+  "followup": {
+    "series": "Recon 3: LIVER 3 PHASE (C/A/P)",
+    "z_mm": -250.419998,
+    "study_date": "2000-04-16",
+    "offset_days_from_diagnosis": 63
+  },
+  "interval_days": 62,
+  "pixel_spacing_mm": [
+    0.78125,
+    0.820312
+  ],
+  "crop_px": 210,
+  "window": {
+    "centre": 60,
+    "width": 350
+  },
+  "contour_note": "released collection segmentation (segment 2, Mass); not any individual reader's outline",
+  "licence": "CC BY 4.0",
+  "doi": "10.7937/TCIA.5FNA-0924"
+}

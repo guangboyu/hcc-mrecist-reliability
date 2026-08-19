@@ -1,0 +1,1744 @@
+{
+  "generated_utc": "2026-08-11T22:14:08Z",
+  "seed": 20260803,
+  "provenance": {
+    "HCC-TACE-Seg_clinical_data-V2.xlsx": {
+      "md5": "63af6363b9d0fe453c48e75402e9082c",
+      "expected": "63af6363b9d0fe453c48e75402e9082c",
+      "match": true
+    },
+    "clinical_data_wawtace_v2_15_07_2024.xlsx": {
+      "md5": "fb7aa2803eae6d75745203602b6d385a",
+      "expected": "fb7aa2803eae6d75745203602b6d385a",
+      "match": true
+    },
+    "supplementary_table_s1_definitions_v2.xlsx": {
+      "md5": "fd9fb1cd1c7279882ad7edf6563b1a8d",
+      "expected": "fd9fb1cd1c7279882ad7edf6563b1a8d",
+      "match": true
+    }
+  },
+  "M001_rule_reproduction": {
+    "no_abs_rule": {
+      "reader1": {
+        "n": 96,
+        "n_match": 96,
+        "mismatches": []
+      },
+      "reader2": {
+        "n": 96,
+        "n_match": 96,
+        "mismatches": []
+      },
+      "reader3": {
+        "n": 95,
+        "n_match": 95,
+        "mismatches": []
+      }
+    },
+    "with_5mm_abs_rule": {
+      "reader1": {
+        "n": 96,
+        "n_match": 96,
+        "mismatches": []
+      },
+      "reader2": {
+        "n": 96,
+        "n_match": 96,
+        "mismatches": []
+      },
+      "reader3": {
+        "n": 95,
+        "n_match": 95,
+        "mismatches": []
+      }
+    }
+  },
+  "M002_harmonisation_counterfactual": {
+    "observed": {
+      "n": 93,
+      "four_cat_disagreement": 0.5376344086021505,
+      "binary_orr_disagreement": 0.3978494623655914,
+      "split_cr_fraction": 0.17204301075268819
+    },
+    "baseline_harmonised": {
+      "n": 93,
+      "four_cat_disagreement": 0.5161290322580645,
+      "binary_orr_disagreement": 0.3870967741935484,
+      "split_cr_fraction": 0.17204301075268819
+    },
+    "followup_harmonised": {
+      "n": 93,
+      "four_cat_disagreement": 0.24731182795698925,
+      "binary_orr_disagreement": 0.1935483870967742,
+      "split_cr_fraction": 0.0
+    },
+    "released_vs_derived_identical": true,
+    "released": {
+      "n": 93,
+      "four_cat_disagreement": 0.5376344086021505,
+      "binary_orr_disagreement": 0.3978494623655914,
+      "split_cr_fraction": 0.17204301075268819
+    },
+    "H1_delta_points": 26.881720430107524,
+    "H1_delta_ci95": [
+      16.12903225806452,
+      36.55913978494624
+    ],
+    "H1_passes_15pt_threshold": true
+  },
+  "M003_kappa_by_dichotomy": {
+    "n": 93,
+    "ordinal_linear_weighted": {
+      "reader1_reader2": 0.44614189539098903,
+      "reader1_reader3": 0.5542927564014788,
+      "reader2_reader3": 0.5558739255014327
+    },
+    "CR_vs_nonCR": {
+      "prevalence": 0.2114695340501792,
+      "kappa_by_pair": {
+        "r1_r2": 0.6204081632653061,
+        "r1_r3": 0.714066102997694,
+        "r2_r3": 0.6504953877690469
+      },
+      "kappa_range": [
+        0.6204081632653061,
+        0.714066102997694
+      ],
+      "mean_observed_agreement": 0.8853046594982078
+    },
+    "objective_response_CRPR_vs_SDPD": {
+      "prevalence": 0.6594982078853047,
+      "kappa_by_pair": {
+        "r1_r2": 0.29490196078431374,
+        "r1_r3": 0.4635063957863055,
+        "r2_r3": 0.47022268254790256
+      },
+      "kappa_range": [
+        0.29490196078431374,
+        0.47022268254790256
+      ],
+      "mean_observed_agreement": 0.7347670250896057
+    },
+    "PD_vs_nonPD": {
+      "prevalence": 0.03942652329749104,
+      "kappa_by_pair": {
+        "r1_r2": 0.47899159663865554,
+        "r1_r3": 0.47899159663865554,
+        "r2_r3": 0.6555555555555556
+      },
+      "kappa_range": [
+        0.47899159663865554,
+        0.6555555555555556
+      ],
+      "mean_observed_agreement": 0.96415770609319
+    }
+  },
+  "M003b_multirater_agreement": {
+    "n": 93,
+    "four_category": {
+      "fleiss_kappa_unweighted": 0.44262772023740266,
+      "fleiss_kappa_unweighted_ci95": [
+        0.3253997627600332,
+        0.5496291218471974
+      ],
+      "gwet_ac1_unweighted": 0.5262220756738933,
+      "gwet_ac1_unweighted_ci95": [
+        0.43801053882447916,
+        0.6163713590782184
+      ],
+      "gwet_ac2_ordinal_weighted": 0.8023185467388282,
+      "gwet_ac2_ordinal_weighted_ci95": [
+        0.7458297553156167,
+        0.8537705034939996
+      ]
+    },
+    "CR_vs_nonCR": {
+      "prevalence": 0.2114695340501792,
+      "prevalence_ci95": [
+        0.13978494623655913,
+        0.2867383512544803
+      ],
+      "fleiss_kappa": 0.656086286594761,
+      "fleiss_kappa_ci95": [
+        0.48012128744651167,
+        0.7962113976140134
+      ],
+      "gwet_ac1": 0.8279138798404039,
+      "gwet_ac1_ci95": [
+        0.7344491444835142,
+        0.9049743703274807
+      ],
+      "at_least_one_discordant": 0.17204301075268819,
+      "at_least_one_discordant_ci95": [
+        0.0967741935483871,
+        0.24731182795698925
+      ]
+    },
+    "objective_response_CRPR_vs_SDPD": {
+      "prevalence": 0.6594982078853047,
+      "prevalence_ci95": [
+        0.5842293906810035,
+        0.7347670250896058
+      ],
+      "fleiss_kappa": 0.40943935926773417,
+      "fleiss_kappa_ci95": [
+        0.26578947368421046,
+        0.5401098901098896
+      ],
+      "gwet_ac1": 0.5185280194025323,
+      "gwet_ac1_ci95": [
+        0.38250911103907087,
+        0.6534245417559024
+      ],
+      "at_least_one_discordant": 0.3978494623655914,
+      "at_least_one_discordant_ci95": [
+        0.3010752688172043,
+        0.4946236559139785
+      ]
+    },
+    "PD_vs_nonPD": {
+      "prevalence": 0.03942652329749104,
+      "prevalence_ci95": [
+        0.010752688172043012,
+        0.07526881720430108
+      ],
+      "fleiss_kappa": 0.5267978290366342,
+      "fleiss_kappa_ci95": [
+        -0.025735294117645555,
+        0.8534663865546208
+      ],
+      "fleiss_kappa_undefined_resamples": 6,
+      "gwet_ac1": 0.9612203766766279,
+      "gwet_ac1_ci95": [
+        0.9229930583348285,
+        0.9924628206340415
+      ],
+      "at_least_one_discordant": 0.053763440860215055,
+      "at_least_one_discordant_ci95": [
+        0.010752688172043012,
+        0.09704301075268426
+      ]
+    },
+    "partition_contrasts": {
+      "step1_weighting_ac2_minus_ac1_four_category": {
+        "difference": 0.27609647106493485,
+        "n_defined_resamples": 5000,
+        "ci95": [
+          0.21611356522431624,
+          0.3371428174001576
+        ],
+        "excludes_zero": true
+      },
+      "step2_family_ac1_minus_fleiss_four_category": {
+        "difference": 0.08359435543649069,
+        "n_defined_resamples": 5000,
+        "ci95": [
+          0.052033456957212045,
+          0.13977095798349343
+        ],
+        "excludes_zero": true
+      },
+      "step3_partition_fleiss_four_category_minus_orr": {
+        "difference": 0.033188360969668484,
+        "n_defined_resamples": 5000,
+        "ci95": [
+          -0.05852693797685098,
+          0.12933550063987162
+        ],
+        "excludes_zero": false
+      },
+      "step3_partition_ac1_four_category_minus_orr": {
+        "difference": 0.007694056271360994,
+        "n_defined_resamples": 5000,
+        "ci95": [
+          -0.08798619057340241,
+          0.10385425725301699
+        ],
+        "excludes_zero": false
+      },
+      "cr_kappa_minus_orr_kappa": {
+        "difference": 0.2466469273270268,
+        "n_defined_resamples": 5000,
+        "ci95": [
+          0.050422353941510206,
+          0.43720325613743394
+        ],
+        "excludes_zero": true
+      },
+      "cr_ac1_minus_orr_ac1": {
+        "difference": 0.30938586043787153,
+        "n_defined_resamples": 5000,
+        "ci95": [
+          0.13506222518912217,
+          0.4800087421652072
+        ],
+        "excludes_zero": true
+      },
+      "pd_kappa_minus_orr_kappa": {
+        "difference": 0.11735846976890002,
+        "n_defined_resamples": 4994,
+        "ci95": [
+          -0.4643702683382937,
+          0.47876332798650845
+        ],
+        "excludes_zero": false
+      },
+      "pd_ac1_minus_orr_ac1": {
+        "difference": 0.4426923572740955,
+        "n_defined_resamples": 5000,
+        "ci95": [
+          0.3056831721681574,
+          0.581637552663013
+        ],
+        "excludes_zero": true
+      },
+      "combined_reporting_gap_ac2_minus_orr_kappa": {
+        "difference": 0.392879187471094,
+        "n_defined_resamples": 5000,
+        "ci95": [
+          0.2807275195659112,
+          0.5261434528354887
+        ],
+        "excludes_zero": true
+      }
+    },
+    "partition_contrast_note": "combined_reporting_gap_ac2_minus_orr_kappa varies weighting, coefficient family and partition at once and must not be cited as a partition effect. Use step1/step2/step3 for the decomposition and the within-cardinality contrasts for the partition claim."
+  },
+  "M003c_structural_zero_robustness": {
+    "exclude_any_cr": {
+      "n": 64,
+      "n_excluded": 29,
+      "H1_delta_points": 15.625,
+      "H1_delta_ci95": [
+        4.6875,
+        26.5625
+      ]
+    },
+    "zeros_to_1mm": {
+      "n": 93,
+      "H1_delta_points": 16.12903225806452,
+      "H1_delta_ci95": [
+        7.526881720430106,
+        24.731182795698924
+      ]
+    },
+    "split_cr_is_tautological": true,
+    "log_variance_by_timepoint": {
+      "n": 64,
+      "baseline": 0.059416846260089515,
+      "followup": 0.16528558181558436,
+      "difference": 0.10586873555549485,
+      "ci95": [
+        0.024112242476262122,
+        0.20838692483137677
+      ]
+    }
+  },
+  "M004_coreader_oracle": {
+    "n": 93,
+    "per_held_out_reader": {
+      "reader1": {
+        "four_cat_accuracy": 0.6344086021505376,
+        "binary_orr_accuracy": 0.7311827956989247
+      },
+      "reader2": {
+        "four_cat_accuracy": 0.5591397849462365,
+        "binary_orr_accuracy": 0.6774193548387096
+      },
+      "reader3": {
+        "four_cat_accuracy": 0.7204301075268817,
+        "binary_orr_accuracy": 0.7741935483870968
+      }
+    },
+    "mean_four_cat_accuracy": 0.6379928315412186,
+    "mean_binary_orr_accuracy": 0.7275985663082437,
+    "binary_orr_prevalence": 0.6594982078853047,
+    "majority_class_baseline": 0.6594982078853047,
+    "oracle_gain_over_majority": 0.06810035842293904
+  },
+  "M003d_published_table_reconciliation": {
+    "published": {
+      "mRECIST_gwet_four_category": 0.8,
+      "RECIST_gwet_four_category": 0.9,
+      "mRECIST_fleiss_four_category": 0.6,
+      "RECIST_fleiss_four_category": 0.51
+    },
+    "recomputed": {
+      "mRECIST": {
+        "n": 93,
+        "codes_present": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "gwet_ac1_unweighted": 0.5262220756738933,
+        "gwet_ac2_ordinal_weighted": 0.8023185467388282,
+        "fleiss_unweighted": 0.44262772023740266,
+        "fleiss_ordinal_weighted": 0.5649618576980275
+      },
+      "RECIST": {
+        "n": 93,
+        "codes_present": [
+          2,
+          3,
+          4
+        ],
+        "gwet_ac1_unweighted": 0.777294154856394,
+        "gwet_ac2_ordinal_weighted": 0.9090255147513641,
+        "fleiss_unweighted": 0.35394092974484387,
+        "fleiss_ordinal_weighted": 0.3873762376237627
+      }
+    },
+    "orr_from_published_tables": {
+      "r1_r3": {
+        "n_in_published_table": 93,
+        "orr_kappa_from_published_table": 0.4635063957863055,
+        "orr_kappa_this_pipeline_n93": 0.4635063957863055,
+        "agrees_to_4dp": true
+      },
+      "r1_r2": {
+        "n_in_published_table": 95,
+        "orr_kappa_from_published_table": 0.31348118614502873,
+        "orr_kappa_this_pipeline_n93": 0.29490196078431374,
+        "agrees_to_4dp": false
+      },
+      "r2_r3": {
+        "n_in_published_table": 93,
+        "orr_kappa_from_published_table": 0.47022268254790256,
+        "orr_kappa_this_pipeline_n93": 0.47022268254790256,
+        "agrees_to_4dp": true
+      }
+    },
+    "percent_change_by_released_code": {
+      "code_1": {
+        "n_reader_observations": 61,
+        "median_percent_change": -100.0,
+        "min_percent_change": -100.0,
+        "max_percent_change": -100.0
+      },
+      "code_2": {
+        "n_reader_observations": 126,
+        "median_percent_change": -50.47172990093672,
+        "min_percent_change": -94.40894568690096,
+        "max_percent_change": -30.270270270270267
+      },
+      "code_3": {
+        "n_reader_observations": 86,
+        "median_percent_change": -10.45261423740571,
+        "min_percent_change": -29.537366548042705,
+        "max_percent_change": 18.040089086859698
+      },
+      "code_4": {
+        "n_reader_observations": 14,
+        "median_percent_change": 45.96297855511756,
+        "min_percent_change": 20.078740157480322,
+        "max_percent_change": 929.4871794871796
+      }
+    }
+  },
+  "M005_measurement_variability": {
+    "n": 93,
+    "baseline_log_icc": {
+      "ICC_2_1_absolute": 0.8524058335180842,
+      "ICC_3_1_consistency": 0.8563594878803885
+    },
+    "baseline_within_patient_cv": 0.14273983170667695,
+    "followup_no_cr_n": 64,
+    "followup_log_icc_no_cr": {
+      "ICC_2_1_absolute": 0.7058913977608154,
+      "ICC_3_1_consistency": 0.7112196072529592
+    },
+    "followup_within_patient_cv_no_cr": 0.2584944898705387,
+    "baseline_ratio_ge_1p5_frac": 0.20430107526881722,
+    "baseline_ratio_ge_2_frac": 0.07526881720430108,
+    "baseline_ratio_max": 7.628205128205129,
+    "baseline_ratio_median": 1.2161764705882354,
+    "threshold_fragile_fraction": 0.44086021505376344
+  },
+  "M005b_recist_ratio_spread": {
+    "n": 93,
+    "ratio_ge_1p5_count": 7,
+    "ratio_ge_1p5_frac": 0.07526881720430108,
+    "ratio_median": 1.0940298507462687
+  },
+  "M005c_icc_scale_sensitivity": {
+    "all": {
+      "n": 93,
+      "raw": {
+        "baseline_icc": 0.8714466887382313,
+        "followup_icc": 0.856805347456712,
+        "difference_bl_minus_fu": 0.014641341281519282,
+        "difference_ci95": [
+          -0.0553635457957103,
+          0.09452742723982907
+        ],
+        "excludes_zero": false
+      }
+    },
+    "no_cr": {
+      "n": 64,
+      "raw": {
+        "baseline_icc": 0.8418354689599734,
+        "followup_icc": 0.821055516451716,
+        "difference_bl_minus_fu": 0.02077995250825737,
+        "difference_ci95": [
+          -0.07455416645334044,
+          0.13707533949772194
+        ],
+        "excludes_zero": false
+      },
+      "log": {
+        "baseline_icc": 0.8075069942244387,
+        "followup_icc": 0.7058913977608154,
+        "difference_bl_minus_fu": 0.10161559646362328,
+        "difference_ci95": [
+          -0.06631496219516571,
+          0.2735453015028434
+        ],
+        "excludes_zero": false
+      }
+    }
+  },
+  "M006_easl_audit": {
+    "easl_columns_present": [
+      "1_EASL_BL",
+      "1_EASL_FU",
+      "1_EASL"
+    ],
+    "n_readers_with_easl": 1,
+    "value_counts_1_EASL": {
+      "4.0": 75,
+      "3.0": 21
+    },
+    "n_distinct_categories": 2,
+    "code_3_always_fu_zero": true,
+    "code_4_never_fu_zero": true,
+    "mrecist_uses_code_1_for_CR": true
+  },
+  "M007_tace_type_crosstab": {
+    "chemotherapy_raw_counts": {
+      "Cisplatin, doxorubicin, Mitomycin-C": 52,
+      "doxorubicin LC beads": 33,
+      "<NA>": 17,
+      "Cisplatin, Mitomycin-C": 2,
+      "Cisplastin": 1
+    },
+    "crosstab_tace_type_by_bclc": {
+      "DEB-TACE": {
+        "Stage-A": 7,
+        "Stage-B": 5,
+        "Stage-C": 21,
+        "Stage-D": 0
+      },
+      "MISSING": {
+        "Stage-A": 0,
+        "Stage-B": 6,
+        "Stage-C": 11,
+        "Stage-D": 0
+      },
+      "cTACE": {
+        "Stage-A": 5,
+        "Stage-B": 13,
+        "Stage-C": 34,
+        "Stage-D": 3
+      }
+    },
+    "n_missing_tace_type": 17,
+    "missing_by_bclc": {
+      "Stage-C": 11,
+      "Stage-B": 6
+    },
+    "Tr_Size_available_by_bclc": {
+      "Stage-A": {
+        "n_with_size": 12,
+        "n_total": 12
+      },
+      "Stage-B": {
+        "n_with_size": 24,
+        "n_total": 24
+      },
+      "Stage-C": {
+        "n_with_size": 17,
+        "n_total": 66
+      },
+      "Stage-D": {
+        "n_with_size": 0,
+        "n_total": 3
+      }
+    }
+  },
+  "M008_hcc_survival": {
+    "median_os_by_n_readers_cr": {
+      "0": {
+        "n": 64,
+        "median_os_weeks": 88.85714286,
+        "deaths": 56
+      },
+      "1": {
+        "n": 12,
+        "median_os_weeks": 124.2142857,
+        "deaths": 11
+      },
+      "2": {
+        "n": 4,
+        "median_os_weeks": 155.42857145,
+        "deaths": 3
+      },
+      "3": {
+        "n": 13,
+        "median_os_weeks": 162.8571429,
+        "deaths": 12
+      }
+    },
+    "cox_majority_cr_adjusted": {
+      "terms": [
+        "majority_cr",
+        "bclc_cd",
+        "afp_ge400"
+      ],
+      "converged": true,
+      "beta": [
+        -0.6051005746864071,
+        -0.13845631303560044,
+        0.2265642295828655
+      ],
+      "se": [
+        0.31303719665942636,
+        0.2541706846678317,
+        0.25111839659807356
+      ],
+      "hr": [
+        0.5460195081372471,
+        0.8707012887344431,
+        1.2542831693314858
+      ],
+      "hr_ci_lo": [
+        0.29562796797077856,
+        0.529071944733531,
+        0.7667244279632451
+      ],
+      "hr_ci_hi": [
+        1.0084881525685374,
+        1.4329256006678832,
+        2.051879673440707
+      ],
+      "p": [
+        0.05323632627108532,
+        0.5859340433566727,
+        0.36693961117510776
+      ],
+      "loglik": -301.3425843877472,
+      "n": 93,
+      "events": 82
+    },
+    "cox_per_reader_cr_adjusted": {
+      "reader1": {
+        "hr_cr": 0.6142456716683727,
+        "ci": [
+          0.35306670520667965,
+          1.0686302038660551
+        ],
+        "p": 0.08451828341235434,
+        "n": 96,
+        "events": 85
+      },
+      "reader2": {
+        "hr_cr": 0.6596240733413885,
+        "ci": [
+          0.39826463202222784,
+          1.0924995170226453
+        ],
+        "p": 0.10602204911611879,
+        "n": 96,
+        "events": 85
+      },
+      "reader3": {
+        "hr_cr": 0.5922878189366072,
+        "ci": [
+          0.3096010409620905,
+          1.1330868248070196
+        ],
+        "p": 0.11353760183659256,
+        "n": 95,
+        "events": 84
+      }
+    },
+    "cox_n_readers_cr_unadjusted": {
+      "hr_per_reader": 0.8230553783365268,
+      "ci": [
+        0.6698471860074164,
+        1.011305518571191
+      ],
+      "p": 0.06387908034555667,
+      "n": 93,
+      "events": 82
+    },
+    "cox_bclc_cd_alone": {
+      "hr": 1.1685684316402847,
+      "ci": [
+        0.7577058449291353,
+        1.8022194081846474
+      ],
+      "p": 0.48096270055832324,
+      "n": 105,
+      "events": 93
+    },
+    "c_index_for_os": {
+      "reader1_cr": 0.5493626882966396,
+      "reader2_cr": 0.5633541811443131,
+      "reader3_cr": 0.5438077196305944,
+      "majority_cr": 0.556559405940594,
+      "mean_followup_viable_diameter": 0.5928059117583134
+    },
+    "c_index_matched_set": {
+      "n": 93,
+      "events": 82,
+      "note": "All predictors on one patient set. Differences are against the continuous measurement, paired bootstrap over patients. Harrell's C credits ties at 0.5, which compresses binary predictors toward 0.5; the ordinal comparators are the fair competitors.",
+      "c_index": {
+        "mean_followup_viable_diameter": 0.6059405940594059,
+        "reader1_cr": 0.5535891089108911,
+        "reader1_four_category": 0.5701732673267327,
+        "reader1_orr": 0.5368811881188119,
+        "reader2_cr": 0.5663366336633663,
+        "reader2_four_category": 0.5827970297029703,
+        "reader2_orr": 0.5373762376237624,
+        "reader3_cr": 0.5438118811881189,
+        "reader3_four_category": 0.585519801980198,
+        "reader3_orr": 0.5625,
+        "majority_cr": 0.556559405940594,
+        "mean_four_category": 0.591460396039604,
+        "majority_orr": 0.5434405940594059
+      },
+      "difference_vs_continuous": {
+        "reader1_cr": {
+          "continuous_minus_this": 0.05235148514851484,
+          "ci95": [
+            -0.005838541458309354,
+            0.11202605871515015
+          ],
+          "excludes_zero": false
+        },
+        "reader1_four_category": {
+          "continuous_minus_this": 0.035767326732673244,
+          "ci95": [
+            -0.025713632759142117,
+            0.10227762841561036
+          ],
+          "excludes_zero": false
+        },
+        "reader1_orr": {
+          "continuous_minus_this": 0.06905940594059401,
+          "ci95": [
+            -0.0006419780568194579,
+            0.1434976137150353
+          ],
+          "excludes_zero": false
+        },
+        "reader2_cr": {
+          "continuous_minus_this": 0.03960396039603964,
+          "ci95": [
+            -0.01640875324230936,
+            0.09526486349070677
+          ],
+          "excludes_zero": false
+        },
+        "reader2_four_category": {
+          "continuous_minus_this": 0.02314356435643561,
+          "ci95": [
+            -0.03224207792493784,
+            0.08254246780030546
+          ],
+          "excludes_zero": false
+        },
+        "reader2_orr": {
+          "continuous_minus_this": 0.06856435643564351,
+          "ci95": [
+            0.0016444648347291638,
+            0.13692180254190933
+          ],
+          "excludes_zero": true
+        },
+        "reader3_cr": {
+          "continuous_minus_this": 0.06212871287128707,
+          "ci95": [
+            0.0013587360194624977,
+            0.12195276925518636
+          ],
+          "excludes_zero": true
+        },
+        "reader3_four_category": {
+          "continuous_minus_this": 0.020420792079207883,
+          "ci95": [
+            -0.03592577700778491,
+            0.08392435353455573
+          ],
+          "excludes_zero": false
+        },
+        "reader3_orr": {
+          "continuous_minus_this": 0.043440594059405924,
+          "ci95": [
+            -0.02048970486166642,
+            0.10920950667282185
+          ],
+          "excludes_zero": false
+        },
+        "majority_cr": {
+          "continuous_minus_this": 0.04938118811881187,
+          "ci95": [
+            -0.01018575492684706,
+            0.10658240874545166
+          ],
+          "excludes_zero": false
+        },
+        "mean_four_category": {
+          "continuous_minus_this": 0.014480198019801938,
+          "ci95": [
+            -0.03968476083301906,
+            0.07403341438442429
+          ],
+          "excludes_zero": false
+        },
+        "majority_orr": {
+          "continuous_minus_this": 0.0625,
+          "ci95": [
+            -0.0068870996203871365,
+            0.13469305130537249
+          ],
+          "excludes_zero": false
+        }
+      },
+      "any_categorisation_beaten_significantly": false
+    },
+    "os_units": "weeks (per glossary)"
+  },
+  "M009_waw_survival": {
+    "cox_nonviable_adjusted": {
+      "terms": [
+        "nonviable",
+        "bclc_b",
+        "log_afp",
+        "albumin",
+        "bilirubin"
+      ],
+      "converged": true,
+      "beta": [
+        -1.1606244399319157,
+        -0.054895862847060536,
+        0.07556931765700137,
+        -0.5350642577761432,
+        0.1239354838126721
+      ],
+      "se": [
+        0.19405886560426555,
+        0.1717106690534658,
+        0.025461914160191647,
+        0.17113513308505723,
+        0.08661304583886525
+      ],
+      "hr": [
+        0.31329048869852427,
+        0.9465837173543705,
+        1.0784979840803908,
+        0.5856316575477601,
+        1.1319428400070495
+      ],
+      "hr_ci_lo": [
+        0.21417115015668028,
+        0.6760766821820876,
+        1.0259961208597967,
+        0.4187466823490198,
+        0.9552080717724092
+      ],
+      "hr_ci_hi": [
+        0.4582826876409653,
+        1.325324120140404,
+        1.1336864516512273,
+        0.8190260431395626,
+        1.3413774767059443
+      ],
+      "p": [
+        2.220642114636462e-09,
+        0.749195927776789,
+        0.0029980728465590634,
+        0.0017686442417874648,
+        0.15245597630040986
+      ],
+      "loglik": -785.6972644508213,
+      "n": 233,
+      "events": 170
+    },
+    "cox_bclc_b_alone": {
+      "hr": 1.1572688064827763,
+      "ci": [
+        0.8301496542554574,
+        1.6132887408827892
+      ],
+      "p": 0.3888263172138413,
+      "n": 233,
+      "events": 170
+    },
+    "cox_albumin_alone": {
+      "hr_per_unit": 0.4889309598778185,
+      "ci": [
+        0.3641869524427259,
+        0.6564032069892449
+      ],
+      "p": 1.923923220958912e-06,
+      "n": 233,
+      "events": 170
+    },
+    "cox_nonviable_adjusted_90d_landmark": {
+      "terms": [
+        "nonviable",
+        "bclc_b",
+        "log_afp",
+        "albumin",
+        "bilirubin"
+      ],
+      "n_excluded_by_landmark": 11,
+      "converged": true,
+      "beta": [
+        -1.1027444906321364,
+        -0.01821348423577853,
+        0.08681217120398095,
+        -0.4872024425487674,
+        0.10826293127324178
+      ],
+      "se": [
+        0.19614037845644486,
+        0.17650007060560835,
+        0.026343603476928303,
+        0.17849857884645418,
+        0.09292028691076128
+      ],
+      "hr": [
+        0.33195877461167506,
+        0.9819513788405531,
+        1.0906917971503705,
+        0.614342651262845,
+        1.1143407018906397
+      ],
+      "hr_ci_lo": [
+        0.22600918647719823,
+        0.6947844519342989,
+        1.0358047992677253,
+        0.432981768438995,
+        0.9288009450791915
+      ],
+      "hr_ci_hi": [
+        0.48757588025211734,
+        1.3878095684531004,
+        1.1484872412370681,
+        0.871669249542173,
+        1.3369443759386452
+      ],
+      "p": [
+        1.8851823435639403e-08,
+        0.9178101891210966,
+        0.0009828884177613961,
+        0.006344061138289225,
+        0.2439719615956042
+      ],
+      "loglik": -730.2274783745468,
+      "n": 222,
+      "events": 159
+    },
+    "time_to_nonv": {
+      "n": 113,
+      "median": 70.0,
+      "q1": 48.0,
+      "q3": 139.0,
+      "n_negative": 1,
+      "min": -47.0
+    },
+    "progression": {
+      "n_progression_time_nonmissing": 108,
+      "n_events": 56,
+      "n_rows": 233,
+      "note": "PFS is restricted to rows with a progression_time; not 233"
+    },
+    "survival_units": "days"
+  },
+  "M010_waw_score_audit": {
+    "lesion_diameter_unit_finding": {
+      "observed_range_mm": [
+        7.0,
+        180.0
+      ],
+      "note": "lesion*_diameter is mm; the derived 6_12 column is cm. Neither unit is documented."
+    },
+    "lab_albumin_observed_range": [
+      2.5,
+      5.2
+    ],
+    "lab_albumin_documented_unit": "g/l (per supplementary_table_s1)",
+    "albi_grade_if_albumin_read_as_g_per_L": {
+      "3.0": 233
+    },
+    "albi_grade_if_albumin_read_as_g_per_dL": {
+      "1.0": 127,
+      "2.0": 99,
+      "3.0": 7
+    },
+    "hap_score": {
+      "n_released": 232,
+      "match_3_item": 189,
+      "match_4_item": 232,
+      "documented_criteria_count": 3
+    },
+    "mhap_2": {
+      "n_released": 232,
+      "match_4_item_plus_multifocal": 232
+    },
+    "six_and_twelve_continuous": {
+      "n": 233,
+      "match_maxdiam_plus_count": 230
+    },
+    "six_and_twelve_bands": {
+      "n": 233,
+      "match_published_cutoffs_le6_le12": 213,
+      "match_rounded_sum_cutoffs": 230,
+      "released_band_counts": {
+        "0": 126,
+        "1": 95,
+        "2": 12
+      }
+    }
+  },
+  "M011_reader_crossed_attribution": {
+    "primary": {
+      "vary_followup_four_cat": 0.5053763440860215,
+      "vary_baseline_four_cat": 0.24372759856630824,
+      "delta_four_cat_points": 26.16487455197133,
+      "vary_followup_orr": 0.36917562724014336,
+      "vary_baseline_orr": 0.16845878136200718,
+      "delta_orr_points": 20.071684587813618,
+      "all_nine_combinations_four_cat": 0.6451612903225806,
+      "diagonal_observed_four_cat": 0.5376344086021505,
+      "n": 93,
+      "delta_four_cat_ci95": [
+        16.12903225806452,
+        35.84229390681005
+      ],
+      "delta_orr_ci95": [
+        11.469534050179215,
+        28.673835125448033
+      ],
+      "four_cat_excludes_zero": true
+    },
+    "exclude_any_cr": {
+      "vary_followup_four_cat": 0.484375,
+      "vary_baseline_four_cat": 0.3125,
+      "delta_four_cat_points": 17.1875,
+      "vary_followup_orr": 0.4375,
+      "vary_baseline_orr": 0.21875,
+      "delta_orr_points": 21.875,
+      "all_nine_combinations_four_cat": 0.6875,
+      "diagonal_observed_four_cat": 0.53125,
+      "n": 64,
+      "delta_four_cat_ci95": [
+        5.729166666666669,
+        29.166666666666664
+      ],
+      "delta_orr_ci95": [
+        10.9375,
+        33.333333333333336
+      ],
+      "four_cat_excludes_zero": true
+    },
+    "zeros_to_1mm": {
+      "vary_followup_four_cat": 0.4014336917562724,
+      "vary_baseline_four_cat": 0.24372759856630824,
+      "delta_four_cat_points": 15.770609318996417,
+      "vary_followup_orr": 0.36917562724014336,
+      "vary_baseline_orr": 0.16845878136200718,
+      "delta_orr_points": 20.071684587813618,
+      "all_nine_combinations_four_cat": 0.5591397849462365,
+      "diagonal_observed_four_cat": 0.43010752688172044,
+      "n": 93,
+      "delta_four_cat_ci95": [
+        7.168458781362,
+        24.73118279569892
+      ],
+      "delta_orr_ci95": [
+        11.111111111111112,
+        29.032258064516125
+      ],
+      "four_cat_excludes_zero": true
+    }
+  },
+  "M012_equal_noise_control": {
+    "n_patients": 64,
+    "n_sim": 2000,
+    "common_log_sd": 0.3351883262254772,
+    "simulated_H1_delta_points_mean": -3.52109375,
+    "simulated_H1_delta_ci95": [
+      -15.625,
+      9.375
+    ],
+    "note": "Equal noise at both timepoints. A non-zero value is asymmetry manufactured by the rule; compare against the observed no-CR delta of 15.6 points from M003c."
+  },
+  "M013_cohort_characteristics": {
+    "full_collection": {
+      "n": 105,
+      "age_years": {
+        "median": 69.0,
+        "q1": 59.0,
+        "q3": 76.0
+      },
+      "Sex": {
+        "1": {
+          "n": 68,
+          "pct": 64.76190476190476
+        },
+        "2": {
+          "n": 37,
+          "pct": 35.23809523809524
+        }
+      },
+      "hepatitis": {
+        "No virus": {
+          "n": 54,
+          "pct": 51.42857142857142
+        },
+        "HCV only": {
+          "n": 26,
+          "pct": 24.761904761904763
+        },
+        "HCV and HBV": {
+          "n": 16,
+          "pct": 15.238095238095239
+        },
+        "HBV only": {
+          "n": 9,
+          "pct": 8.571428571428571
+        }
+      },
+      "Evidence_of_cirh": {
+        "1": {
+          "n": 78,
+          "pct": 74.28571428571429
+        },
+        "0": {
+          "n": 27,
+          "pct": 25.71428571428571
+        }
+      },
+      "CPS": {
+        "A": {
+          "n": 86,
+          "pct": 81.9047619047619
+        },
+        "B": {
+          "n": 18,
+          "pct": 17.142857142857142
+        },
+        "C": {
+          "n": 1,
+          "pct": 0.9523809523809524
+        }
+      },
+      "BCLC": {
+        "Stage-C": {
+          "n": 66,
+          "pct": 62.857142857142854
+        },
+        "Stage-B": {
+          "n": 24,
+          "pct": 22.857142857142858
+        },
+        "Stage-A": {
+          "n": 12,
+          "pct": 11.428571428571429
+        },
+        "Stage-D": {
+          "n": 3,
+          "pct": 2.857142857142857
+        }
+      },
+      "AFP_group": {
+        "<400": {
+          "n": 75,
+          "pct": 71.42857142857143
+        },
+        ">=400": {
+          "n": 30,
+          "pct": 28.57142857142857
+        }
+      },
+      "tumor_nodul": {
+        "multinodular": {
+          "n": 53,
+          "pct": 50.476190476190474
+        },
+        "uninodular": {
+          "n": 52,
+          "pct": 49.523809523809526
+        }
+      },
+      "T_involvment": {
+        "< or = 50%": {
+          "n": 85,
+          "pct": 80.95238095238095
+        },
+        ">50%": {
+          "n": 20,
+          "pct": 19.047619047619047
+        }
+      },
+      "Portal Vein Thrombosis": {
+        "0": {
+          "n": 89,
+          "pct": 84.76190476190476
+        },
+        "1": {
+          "n": 16,
+          "pct": 15.238095238095239
+        }
+      },
+      "Vascular invasion": {
+        "0": {
+          "n": 82,
+          "pct": 78.0952380952381
+        },
+        "1": {
+          "n": 23,
+          "pct": 21.904761904761905
+        }
+      },
+      "Metastasis": {
+        "0": {
+          "n": 98,
+          "pct": 93.33333333333333
+        },
+        "1": {
+          "n": 7,
+          "pct": 6.666666666666667
+        }
+      },
+      "CLIP": {
+        "Stage_ 0-2": {
+          "n": 88,
+          "pct": 83.80952380952381
+        },
+        "Stage_3": {
+          "n": 12,
+          "pct": 11.428571428571429
+        },
+        "Stage_4-6": {
+          "n": 5,
+          "pct": 4.761904761904762
+        }
+      },
+      "Okuda": {
+        "Stage I": {
+          "n": 71,
+          "pct": 67.61904761904762
+        },
+        "Stage II": {
+          "n": 33,
+          "pct": 31.428571428571427
+        },
+        "Stage III": {
+          "n": 1,
+          "pct": 0.9523809523809524
+        }
+      },
+      "overall_survival_weeks": {
+        "median": 104.4285714,
+        "q1": 56.28571429,
+        "q3": 148.1428571
+      },
+      "deaths": 93
+    },
+    "analysis_set": {
+      "n": 93,
+      "age_years": {
+        "median": 70.0,
+        "q1": 60.0,
+        "q3": 76.0
+      },
+      "Sex": {
+        "1": {
+          "n": 58,
+          "pct": 62.365591397849464
+        },
+        "2": {
+          "n": 35,
+          "pct": 37.634408602150536
+        }
+      },
+      "hepatitis": {
+        "No virus": {
+          "n": 49,
+          "pct": 52.68817204301075
+        },
+        "HCV only": {
+          "n": 23,
+          "pct": 24.731182795698924
+        },
+        "HCV and HBV": {
+          "n": 14,
+          "pct": 15.053763440860216
+        },
+        "HBV only": {
+          "n": 7,
+          "pct": 7.526881720430108
+        }
+      },
+      "Evidence_of_cirh": {
+        "1": {
+          "n": 69,
+          "pct": 74.19354838709677
+        },
+        "0": {
+          "n": 24,
+          "pct": 25.806451612903224
+        }
+      },
+      "CPS": {
+        "A": {
+          "n": 75,
+          "pct": 80.64516129032258
+        },
+        "B": {
+          "n": 17,
+          "pct": 18.27956989247312
+        },
+        "C": {
+          "n": 1,
+          "pct": 1.0752688172043012
+        }
+      },
+      "BCLC": {
+        "Stage-C": {
+          "n": 58,
+          "pct": 62.365591397849464
+        },
+        "Stage-B": {
+          "n": 21,
+          "pct": 22.58064516129032
+        },
+        "Stage-A": {
+          "n": 11,
+          "pct": 11.827956989247312
+        },
+        "Stage-D": {
+          "n": 3,
+          "pct": 3.225806451612903
+        }
+      },
+      "AFP_group": {
+        "<400": {
+          "n": 66,
+          "pct": 70.96774193548387
+        },
+        ">=400": {
+          "n": 27,
+          "pct": 29.03225806451613
+        }
+      },
+      "tumor_nodul": {
+        "uninodular": {
+          "n": 47,
+          "pct": 50.53763440860215
+        },
+        "multinodular": {
+          "n": 46,
+          "pct": 49.46236559139785
+        }
+      },
+      "T_involvment": {
+        "< or = 50%": {
+          "n": 78,
+          "pct": 83.87096774193549
+        },
+        ">50%": {
+          "n": 15,
+          "pct": 16.129032258064516
+        }
+      },
+      "Portal Vein Thrombosis": {
+        "0": {
+          "n": 78,
+          "pct": 83.87096774193549
+        },
+        "1": {
+          "n": 15,
+          "pct": 16.129032258064516
+        }
+      },
+      "Vascular invasion": {
+        "0": {
+          "n": 73,
+          "pct": 78.49462365591397
+        },
+        "1": {
+          "n": 20,
+          "pct": 21.50537634408602
+        }
+      },
+      "Metastasis": {
+        "0": {
+          "n": 86,
+          "pct": 92.47311827956989
+        },
+        "1": {
+          "n": 7,
+          "pct": 7.526881720430108
+        }
+      },
+      "CLIP": {
+        "Stage_ 0-2": {
+          "n": 79,
+          "pct": 84.94623655913979
+        },
+        "Stage_3": {
+          "n": 9,
+          "pct": 9.67741935483871
+        },
+        "Stage_4-6": {
+          "n": 5,
+          "pct": 5.376344086021505
+        }
+      },
+      "Okuda": {
+        "Stage I": {
+          "n": 64,
+          "pct": 68.81720430107528
+        },
+        "Stage II": {
+          "n": 28,
+          "pct": 30.107526881720432
+        },
+        "Stage III": {
+          "n": 1,
+          "pct": 1.0752688172043012
+        }
+      },
+      "overall_survival_weeks": {
+        "median": 102.1428571,
+        "q1": 56.28571429,
+        "q3": 148.1428571
+      },
+      "deaths": 82
+    },
+    "mrecist_category_by_reader": {
+      "reader1": {
+        "CR": {
+          "n": 20,
+          "pct": 21.50537634408602
+        },
+        "PR": {
+          "n": 40,
+          "pct": 43.01075268817204
+        },
+        "SD": {
+          "n": 28,
+          "pct": 30.107526881720432
+        },
+        "PD": {
+          "n": 5,
+          "pct": 5.376344086021505
+        },
+        "objective_response": {
+          "n": 60,
+          "pct": 64.51612903225806
+        }
+      },
+      "reader2": {
+        "CR": {
+          "n": 25,
+          "pct": 26.881720430107524
+        },
+        "PR": {
+          "n": 40,
+          "pct": 43.01075268817204
+        },
+        "SD": {
+          "n": 25,
+          "pct": 26.881720430107524
+        },
+        "PD": {
+          "n": 3,
+          "pct": 3.225806451612903
+        },
+        "objective_response": {
+          "n": 65,
+          "pct": 69.89247311827957
+        }
+      },
+      "reader3": {
+        "CR": {
+          "n": 14,
+          "pct": 15.053763440860216
+        },
+        "PR": {
+          "n": 45,
+          "pct": 48.38709677419355
+        },
+        "SD": {
+          "n": 31,
+          "pct": 33.33333333333333
+        },
+        "PD": {
+          "n": 3,
+          "pct": 3.225806451612903
+        },
+        "objective_response": {
+          "n": 59,
+          "pct": 63.44086021505376
+        }
+      }
+    }
+  },
+  "M014_recist_replication": {
+    "n_paired": 93,
+    "n_mrecist_complete": 93,
+    "n_recist_complete": 93,
+    "followup_zeros": {
+      "mrecist": 59,
+      "recist": 0
+    },
+    "rule_reproduction": {
+      "no_abs_rule": {
+        "n_reader_observations": 279,
+        "n_match": 279
+      },
+      "with_5mm_abs_rule": {
+        "n_reader_observations": 279,
+        "n_match": 279
+      }
+    },
+    "crossed": {
+      "mrecist": {
+        "vary_followup_four_cat": 0.5053763440860215,
+        "vary_baseline_four_cat": 0.24372759856630824,
+        "delta_four_cat_points": 26.16487455197133,
+        "vary_followup_orr": 0.36917562724014336,
+        "vary_baseline_orr": 0.16845878136200718,
+        "delta_orr_points": 20.071684587813618,
+        "all_nine_combinations_four_cat": 0.6451612903225806,
+        "diagonal_observed_four_cat": 0.5376344086021505
+      },
+      "recist": {
+        "vary_followup_four_cat": 0.28315412186379924,
+        "vary_baseline_four_cat": 0.16487455197132617,
+        "delta_four_cat_points": 11.827956989247307,
+        "vary_followup_orr": 0.18279569892473116,
+        "vary_baseline_orr": 0.07168458781362007,
+        "delta_orr_points": 11.111111111111109,
+        "all_nine_combinations_four_cat": 0.40860215053763443,
+        "diagonal_observed_four_cat": 0.27956989247311825
+      }
+    },
+    "mrecist_minus_recist_four_cat": {
+      "difference_points": 14.336917562724024,
+      "ci95": [
+        3.225806451612904,
+        24.73118279569892
+      ],
+      "excludes_zero": true
+    },
+    "mrecist_minus_recist_orr": {
+      "difference_points": 8.960573476702509,
+      "ci95": [
+        -1.4336917562724025,
+        18.996415770609325
+      ],
+      "excludes_zero": false
+    }
+  },
+  "M015_reference_dependence": {
+    "n": 93,
+    "features": [
+      "age",
+      "Sex",
+      "Evidence_of_cirh",
+      "CPS",
+      "BCLC",
+      "AFP_group",
+      "tumor_nodul",
+      "T_involvment",
+      "Portal Vein Thrombosis",
+      "Vascular invasion",
+      "Metastasis"
+    ],
+    "training_reference": "majority",
+    "prevalence_by_reference": {
+      "reader1": 0.6451612903225806,
+      "reader2": 0.6989247311827957,
+      "reader3": 0.6344086021505376,
+      "majority": 0.6559139784946236,
+      "unanimous_only": 0.46236559139784944
+    },
+    "note": "Predictions are identical across scoring references by construction; only the reference changes.",
+    "models": {
+      "logistic_regression": {
+        "auc_by_reference": {
+          "reader1": 0.5378787878787878,
+          "reader2": 0.7027472527472527,
+          "reader3": 0.5338983050847458,
+          "majority": 0.5409836065573771,
+          "unanimous_only": 0.6190697674418605
+        },
+        "single_reader_range": [
+          0.5338983050847458,
+          0.7027472527472527
+        ],
+        "single_reader_spread": 0.1688489476625069
+      },
+      "random_forest": {
+        "auc_by_reference": {
+          "reader1": 0.5636363636363636,
+          "reader2": 0.7032967032967034,
+          "reader3": 0.5747756729810568,
+          "majority": 0.5881147540983607,
+          "unanimous_only": 0.6306976744186047
+        },
+        "single_reader_range": [
+          0.5636363636363636,
+          0.7032967032967034
+        ],
+        "single_reader_spread": 0.13966033966033975
+      },
+      "bclc_alone": {
+        "auc_by_reference": {
+          "reader1": 0.3987373737373737,
+          "reader2": 0.3942307692307692,
+          "reader3": 0.37313060817547355,
+          "majority": 0.40010245901639346,
+          "unanimous_only": 0.3330232558139535
+        },
+        "single_reader_range": [
+          0.37313060817547355,
+          0.3987373737373737
+        ],
+        "single_reader_spread": 0.02560676556190017
+      }
+    },
+    "best_model_by_reference": {
+      "reader1": "random_forest",
+      "reader2": "random_forest",
+      "reader3": "random_forest",
+      "majority": "random_forest",
+      "unanimous_only": "random_forest"
+    },
+    "ranking_depends_on_reference": false,
+    "primary_model_spread": {
+      "model": "logistic_regression",
+      "spread": 0.1688489476625069,
+      "ci95": [
+        0.06886422785726215,
+        0.32000138033864317
+      ],
+      "n_defined_resamples": 5000,
+      "caveat": "max-minus-min cannot be negative, so this interval measures magnitude, not significance. See pairwise_auc_contrasts."
+    },
+    "pairwise_auc_contrasts": {
+      "reader1_minus_reader2": {
+        "difference": -0.16486846486846485,
+        "ci95": [
+          -0.3092515560319986,
+          -0.0235605436985764
+        ],
+        "excludes_zero": true
+      },
+      "reader1_minus_reader3": {
+        "difference": 0.003980482794042062,
+        "ci95": [
+          -0.11381826536988773,
+          0.12157309599567648
+        ],
+        "excludes_zero": false
+      },
+      "reader2_minus_reader3": {
+        "difference": 0.1688489476625069,
+        "ci95": [
+          0.044948144795708536,
+          0.2948750279449881
+        ],
+        "excludes_zero": true
+      }
+    },
+    "any_pairwise_contrast_excludes_zero": true,
+    "permutation_null": {
+      "model": "logistic_regression",
+      "observed_spread": 0.1688489476625069,
+      "null_spread_median": 0.07756620249142676,
+      "null_spread_p95": 0.1568462138953942,
+      "p_value": 0.033393321335732855,
+      "n_permutations": 5000,
+      "design": "reader identity permuted within each patient, preserving the per-patient label multiset and the disagreement structure",
+      "histogram": {
+        "counts": [
+          57,
+          145,
+          226,
+          295,
+          372,
+          389,
+          379,
+          384,
+          428,
+          409,
+          348,
+          336,
+          270,
+          225,
+          187,
+          144,
+          114,
+          73,
+          63,
+          43,
+          39,
+          27,
+          16,
+          14,
+          5,
+          5,
+          1,
+          2,
+          2,
+          2
+        ],
+        "bin_edges": [
+          0.0005291005291004902,
+          0.009504569504569467,
+          0.018480038480038444,
+          0.02745550745550742,
+          0.0364309764309764,
+          0.045406445406445374,
+          0.05438191438191435,
+          0.06335738335738333,
+          0.0723328523328523,
+          0.08130832130832127,
+          0.09028379028379026,
+          0.09925925925925924,
+          0.10823472823472821,
+          0.11721019721019718,
+          0.12618566618566618,
+          0.13516113516113515,
+          0.14413660413660412,
+          0.1531120731120731,
+          0.16208754208754206,
+          0.17106301106301106,
+          0.18003848003848003,
+          0.189013949013949,
+          0.197989417989418,
+          0.20696488696488696,
+          0.21594035594035593,
+          0.2249158249158249,
+          0.23389129389129387,
+          0.24286676286676287,
+          0.25184223184223187,
+          0.26081770081770084,
+          0.2697931697931698
+        ]
+      }
+    }
+  }
+}

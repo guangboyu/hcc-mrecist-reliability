@@ -1,0 +1,44 @@
+{
+  "generated": "2026-07-24T21:15:51Z",
+  "hcc_official_clinical": {
+    "bytes": 128507,
+    "sha256": "e9d2683dc907819aa08e4027e085854f46464bec834a09e80fc83b19a89e092b",
+    "status": 200,
+    "url": "https://www.cancerimagingarchive.net/wp-content/uploads/HCC-TACE-Seg_clinical_data-V2.xlsx"
+  },
+  "local_files": {
+    "../../data/HCC-TACE-Seg_clinical_data-V2.xlsx": {
+      "md5": "63af6363b9d0fe453c48e75402e9082c"
+    },
+    "../../data/clinical_data_wawtace_v2_15_07_2024.xlsx": {
+      "md5": "fb7aa2803eae6d75745203602b6d385a"
+    },
+    "../../data/supplementary_table_s1_definitions_v2.xlsx": {
+      "md5": "fd9fb1cd1c7279882ad7edf6563b1a8d"
+    }
+  },
+  "tcia_patient_api": {
+    "bytes": 16083,
+    "sha256": "10b0b43ce9e0dd0a17f55fc87fac193ed1495b592703d3d6533e202e0f17447f",
+    "status": 200,
+    "url": "https://services.cancerimagingarchive.net/nbia-api/services/v1/getPatient?Collection=HCC-TACE-Seg&format=json"
+  },
+  "tcia_series_api": {
+    "bytes": 506403,
+    "sha256": "b32d007c0c7c665c44570300190ce74891571bb33b7cb5949185ba5f9b7e6891",
+    "status": 200,
+    "url": "https://services.cancerimagingarchive.net/nbia-api/services/v1/getSeries?Collection=HCC-TACE-Seg&format=json"
+  },
+  "waw_ct_metadata": {
+    "bytes": 16240,
+    "sha256": "ccc0fd7110eaf10d78592a936c9e2c85e377df385cd0097ec5c624264c8db436",
+    "status": 200,
+    "url": "https://zenodo.org/api/records/12741586/files/ct_hcc_metadata_v2.csv/content"
+  },
+  "zenodo_record": {
+    "bytes": 8252,
+    "sha256": "daa6c0aa7af10b1dedcce075b994c6ca67a7c73b789c52f29c8d6fa66f105304",
+    "status": 200,
+    "url": "https://zenodo.org/api/records/12741586"
+  }
+}

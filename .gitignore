@@ -1,0 +1,15 @@
+# Source spreadsheets are not redistributed; see data/README.md for the download and MD5s.
+data/raw/
+
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Rendered figures are build products; the CT tiles they use are inputs.
+figures/*.png
+figures/*.pdf
+figures/*.svg
+figures/*.tiff
+!figures/assets/*

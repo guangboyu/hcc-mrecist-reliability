@@ -1,0 +1,162 @@
+{
+  "source_cohort_n": 93,
+  "analysis_n": 64,
+  "excluded_structural_zero_n": 29,
+  "dispersion": {
+    "n": 64,
+    "mean_diameter_mm": {
+      "baseline": 82.83125000000001,
+      "followup": 58.84635416666667
+    },
+    "absolute_sd_mm": {
+      "baseline": 12.410588207410212,
+      "followup": 13.571554907510247,
+      "difference": 1.160966700100036,
+      "difference_ci95": [
+        -1.2734348478765596,
+        3.710893251464844
+      ]
+    },
+    "log_sd": {
+      "baseline": 0.16234803050509916,
+      "followup": 0.2927068151237594,
+      "difference": 0.13035878461866032,
+      "difference_ci95": [
+        0.06913442977017133,
+        0.1978873609976136
+      ]
+    },
+    "log_variance": {
+      "baseline": 0.059416846260089515,
+      "followup": 0.16528558181558436
+    }
+  },
+  "noise_control": {
+    "calibration": {
+      "sigma_multiplicative": 0.3351883262254772,
+      "tau_additive_mm": 17.75684653755653,
+      "tau_mixed_mm": 9.660123868800936,
+      "sigma_mixed": 0.18061903759753337
+    },
+    "n_patients": 64,
+    "n_sim": 2000,
+    "multiplicative": {
+      "harmonisation_four_cat": {
+        "mean": -3.52109375,
+        "ci95": [
+          -15.625,
+          9.375
+        ]
+      },
+      "reader_crossed_four_cat": {
+        "mean": -0.02135416666666675,
+        "ci95": [
+          -10.937499999999995,
+          10.416666666666663
+        ]
+      },
+      "reader_crossed_orr": {
+        "mean": 0.07083333333333329,
+        "ci95": [
+          -11.458333333333337,
+          11.458333333333332
+        ]
+      }
+    },
+    "additive": {
+      "harmonisation_four_cat": {
+        "mean": 7.08671875,
+        "ci95": [
+          -4.6875,
+          18.75
+        ]
+      },
+      "reader_crossed_four_cat": {
+        "mean": 8.24609375,
+        "ci95": [
+          -2.0833333333333313,
+          18.750000000000007
+        ]
+      },
+      "reader_crossed_orr": {
+        "mean": 13.084895833333334,
+        "ci95": [
+          2.604166666666663,
+          23.958333333333336
+        ]
+      }
+    },
+    "mixed": {
+      "harmonisation_four_cat": {
+        "mean": 2.32109375,
+        "ci95": [
+          -9.375,
+          14.0625
+        ]
+      },
+      "reader_crossed_four_cat": {
+        "mean": 3.5192708333333336,
+        "ci95": [
+          -7.291666666666669,
+          14.0625
+        ]
+      },
+      "reader_crossed_orr": {
+        "mean": 5.784375,
+        "ci95": [
+          -5.208333333333331,
+          16.145833333333336
+        ]
+      }
+    }
+  },
+  "shrinkage_strata": {
+    "tertile_cutpoints_log_change": [
+      -0.5484359587839678,
+      -0.3144294016993649
+    ],
+    "median_log_change": -0.45689763070029343,
+    "most_shrinkage": {
+      "n": 21,
+      "median_percent_change": -55.536000273608266,
+      "delta_four_cat_points": 7.9365079365079385,
+      "delta_four_cat_ci95": [
+        -4.761904761904759,
+        22.222222222222225
+      ],
+      "delta_orr_points": 7.9365079365079385,
+      "delta_orr_ci95": [
+        -4.761904761904759,
+        22.222222222222225
+      ]
+    },
+    "middle": {
+      "n": 22,
+      "median_percent_change": -36.675483839142856,
+      "delta_four_cat_points": 33.33333333333333,
+      "delta_four_cat_ci95": [
+        10.606060606060597,
+        56.060606060606055
+      ],
+      "delta_orr_points": 37.878787878787875,
+      "delta_orr_ci95": [
+        13.63636363636363,
+        60.606060606060616
+      ]
+    },
+    "least_shrinkage": {
+      "n": 21,
+      "median_percent_change": -13.507136639847872,
+      "delta_four_cat_points": 9.523809523809529,
+      "delta_four_cat_ci95": [
+        -9.523809523809529,
+        28.571428571428577
+      ],
+      "delta_orr_points": 19.04761904761904,
+      "delta_orr_ci95": [
+        4.761904761904762,
+        34.920634920634924
+      ]
+    }
+  }
+}
